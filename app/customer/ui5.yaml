@@ -1,0 +1,4 @@
+specVersion: "2.5"
+metadata:
+  name: sap.fe.ca.customer
+type: application

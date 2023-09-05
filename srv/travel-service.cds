@@ -20,7 +20,7 @@ service TravelService @(path:'/processor') {
     to_Customer,
 
     // ***AgencyID***
-    to_Agency.Name                                       as AgencyName,
+    to_Agency.Name as AgencyName,
     @Common.Text: AgencyName
     to_Agency,
 
