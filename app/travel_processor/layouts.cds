@@ -72,6 +72,11 @@ annotate TravelService.Travel with @UI: {
             $Type : 'UI.DataFieldForAction',
             Action : 'TravelService.deductDiscount',
             Label : '{i18n>Deductdiscount}',
+        },
+        {
+            $Type : 'UI.DataFieldForAnnotation',
+            Target : '@UI.DataPoint#Progress',
+            Label : '{i18n>ProgressOfTravel}',
         }
     ],
     Facets                : [
@@ -228,4 +233,11 @@ annotate TravelService.Travel with @(
         BeginDate,
         EndDate,
     ]
+);
+annotate TravelService.Travel with @(
+    UI.DataPoint #Progress : {
+        Value : Progress,
+        Visualization : #Progress,
+        TargetValue : 100,
+    }
 );
