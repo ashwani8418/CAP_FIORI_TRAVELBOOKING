@@ -39,11 +39,6 @@ annotate TravelService.Travel with @UI: {
             Descending: true
         }]
     },
-    SelectionFields       : [
-        to_Agency_AgencyID,
-        to_Customer_CustomerID,
-        TravelStatus_code
-    ],
     LineItem              : [
         {
             $Type : 'UI.DataFieldForAction',
@@ -220,3 +215,12 @@ SortOrder: [{
     Property  : FlightDate,
     Descending: true
 }]}};
+annotate TravelService.Travel with @(
+    UI.SelectionFields : [
+        to_Agency_AgencyID,
+        to_Customer_CustomerID,
+        TravelStatus_code,
+        BeginDate,
+        EndDate,
+    ]
+);
