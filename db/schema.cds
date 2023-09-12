@@ -4,7 +4,7 @@ using {
   sap.fe.cap.travel.Passenger,
   sap.fe.cap.travel.TravelAgency,
   sap.fe.cap.travel.Supplement,
-  sap.fe.cap.travel.Flight
+  sap.fe.cap.travel.Flight,
  } from './master-data';
 
 namespace sap.fe.cap.travel;
