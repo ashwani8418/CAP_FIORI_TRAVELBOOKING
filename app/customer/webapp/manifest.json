@@ -182,7 +182,11 @@
         },
         "extends": {
             "extensions": {
-                "sap.ui.controllerExtensions": {}
+                "sap.ui.controllerExtensions": {
+                    "sap.fe.templates.ObjectPage.ObjectPageController#sap.fe.ca.customer::PassengerObjectPage": {
+                        "controllerName": "sap.fe.ca.customer.ext.controller.PassengerOPExtend"
+                    }
+                }
             }
         }
     },
